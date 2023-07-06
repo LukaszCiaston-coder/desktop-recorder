@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    background: #e66465;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    animation: colorChange 5s infinite;
+}
+
+.control {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#controls {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:focus,
+button:hover {
+    background-color: #45a049;
+}
+
+.video__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#previewVideo {
+    max-width: 400px;
+    max-height: 400px;
+    box-shadow: 3px 3px red, -1em 0 .4em olive;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#downloadLink {
+    display: flex;
+    justify-content: center;
+}
+
+label {
+    color: white;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    padding: 8px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes colorChange {
+    0% {
+        color: #ff0000;
+    }
+
+    50% {
+        color: #00ff00;
+    }
+
+    100% {
+        color: #0000ff;
+    }
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+</head>
+
+<body>
+    <div>
+        <h1>Desktop Recorder</h1>
+    </div>
+    <div id="controls">
+        <div>
+            <label for="fileNameInput">Nazwa pliku:</label>
+            <input type="text" id="fileNameInput" placeholder="Wprowadź nazwę pliku">
+        </div>
+        <div>
+            <label for="formatSelect">Wybierz format:</label>
+            <select id="formatSelect">
+                <option value="video/mp4">MP4</option>
+                <option value="video/quicktime">MOV</option>
+                <option value="video/x-ms-wmv">WMV</option>
+                <option value="video/x-msvideo">AVI</option>
+            </select>
+        </div>
+        <div>
+            <button id="startButton">Start</button>
+            <button id="stopButton">Stop</button>
+        </div>
+    </div>
+    <div class="video__box">
+        <video id="previewVideo" controls style="display: none;"></video>
+    </div>
+    <div id="downloadLink"></div>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
